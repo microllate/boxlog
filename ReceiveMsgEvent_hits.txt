@@ -1,0 +1,9 @@
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/booter/g3.java:5:import com.tencent.mm.autogen.events.ReceiveMsgEvent;
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/booter/g3.java:96:        this.f48108c = new IListener<ReceiveMsgEvent>(a0Var) { // from class: com.tencent.mm.booter.StayTimeReport$2
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/booter/g3.java:102:            public boolean callback(ReceiveMsgEvent receiveMsgEvent) {
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/booter/g3.java:104:                ReceiveMsgEvent receiveMsgEvent2 = receiveMsgEvent;
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/booter/g3.java:105:                if (!(receiveMsgEvent2 instanceof ReceiveMsgEvent)) {
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/storage/f9.java:7:import com.tencent.mm.autogen.events.ReceiveMsgEvent;
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/storage/f9.java:1007:            ReceiveMsgEvent receiveMsgEvent = new ReceiveMsgEvent();
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/autogen/events/ReceiveMsgEvent.java:7:public final class ReceiveMsgEvent extends IEvent {
+/data/data/com.termux/files/home/output_jadx/sources/com/tencent/mm/autogen/events/ReceiveMsgEvent.java:12:    public ReceiveMsgEvent() {
