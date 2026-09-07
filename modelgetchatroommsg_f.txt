@@ -1,0 +1,66 @@
+            Object[] objArr = new Object[2];
+            objArr[0] = Boolean.valueOf(ta3Var == null);
+            objArr[1] = Boolean.valueOf(ta3Var.f243135e == null);
+            Log.e("MicroMsg.GetChatroomMsgFetcher", "[callback] resp == null? %b resp.AddMsgList == null? %b", objArr);
+            o oVar6 = (o) this.f55979f.poll();
+            if (oVar6 == null) {
+                this.f55980g = false;
+                return 0;
+            }
+            Log.i("MicroMsg.GetChatroomMsgFetcher", "do next next... %s", Integer.valueOf(this.f55979f.size()));
+            this.f55980g = true;
+            this.f55978e = x2.e(oVar6, this, true, null);
+            return 0;
+        } catch (Throwable th6) {
+            o oVar7 = (o) this.f55979f.poll();
+            if (oVar7 != null) {
+                Log.i("MicroMsg.GetChatroomMsgFetcher", "do next next... %s", Integer.valueOf(this.f55979f.size()));
+                this.f55980g = true;
+                this.f55978e = x2.e(oVar7, this, true, null);
+            } else {
+                this.f55980g = false;
+            }
+            throw th6;
+        }
+    }
+
+    public final f9 e(i4 i4Var, p0 p0Var) {
+        f9 f9Var = new f9();
+        f9Var.n1(i4Var.f233456r);
+        f9Var.d1(p0Var.f55489f);
+        f9Var.m1(i4Var.f233457s);
+        String g17 = j1.g(i4Var.f233446e);
+        String g18 = j1.g(i4Var.f233447f);
+        if (((ka) ((h2) ((x3) k1.s(x3.class))).hi()).m1(g17) || ((String) k1.u().c().l(2, "")).equals(g17)) {
+            f9Var.j1(1);
+            f9Var.u1(g18);
+            f9Var.t1(i4Var.f233450i);
+        } else {
+            f9Var.j1(0);
+            f9Var.u1(g17);
+            int i17 = i4Var.f233450i;
+            if (i17 <= 3) {
+                i17 = 3;
+            }
+            f9Var.t1(i17);
+        }
+        if (i4Var.f233448g == 10000) {
+            f9Var.t1(4);
+        }
+        f9Var.g1(2);
+        return f9Var;
+    }
+
+    public final LinkedList f(List list, boolean z17, String str) {
+        Class<x3> cls;
+        Iterator it;
+        p0 p0Var;
+        f9 f9Var;
+        Class<x3> cls2 = x3.class;
+        long h17 = ((x4) ((h2) ((x3) k1.s(cls2))).Lh()).h1(str);
+        LinkedList linkedList = new LinkedList();
+        Iterator it6 = list.iterator();
+        long j17 = 0;
+        long j18 = 0;
+        while (it6.hasNext()) {
+            i4 i4Var = (i4) it6.next();
